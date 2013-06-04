@@ -39,10 +39,10 @@ type
 
   {"callBack" при УНИЧТОЖЕНИИ !!! СТАТИЧЕСКАЯ функция !!!
     @param(NODE указатель на УЗЕЛ списка [pInkNodeLL])  }
- fInkNodeLL_doDispose=procedure(NODE:pointer);
+ fInkNodeLL_doDispose=procedure(const NODE:pointer);
   {"callBack" при обходе очереди !!! метод ОБЪЕКТА-класса !!!
     @param(NODE указатель на УЗЕЛ очереди [pInkNodeLL]) }
- aInkNodeLL_doDispose=procedure(NODE:pointer) of object;
+ aInkNodeLL_doDispose=procedure(const NODE:pointer) of object;
 
   {"callBack" обработать Узел при обходе очереди !!! СТАТИЧЕСКАЯ функция !!!
     @param (Data АДРЕС-памяти, некая инфа используемая при обходе)
