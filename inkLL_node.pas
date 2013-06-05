@@ -48,12 +48,12 @@ type
     @param (Data АДРЕС-памяти, некая инфа используемая при обходе)
     @param (NODE это ссылка-указатель на УЗЕЛ очереди [pQueueNode])
     @return(continue @true -- продолжить обход; @false -- ПРЕКРАТИТЬ)  }
- fInkNodeLL_doProcess=function(const Data:pointer; const NODE:pointer):boolean;
+ fInkNodeLL_doProcess=function(const Context:pointer; const NODE:pointer):boolean;
   {"callBack" обработать Узел при обходе очереди !!! метод ОБЪЕКТА-класса !!!
     @param (Data АДРЕС-памяти, некая инфа используемая при обходе)
     @param (NODE это ссылка-указатель на УЗЕЛ очереди [pQueueNode])
     @return(@true -- продолжить обход; @false -- ПРЕКРАТИТЬ)  }
- aInkNodeLL_doProcess=function(const Data:pointer; const NODE:pointer):boolean;
+ aInkNodeLL_doProcess=function(const Context:pointer; const NODE:pointer):boolean;
 
 type
 
